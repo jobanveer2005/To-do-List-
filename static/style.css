@@ -1,69 +1,213 @@
-/* Background */
+/*General*/
+
 body{
     background: linear-gradient(135deg,#667eea,#764ba2);
+    font-family: Arial, Helvetica, sans-serif;
     min-height:100vh;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
-/* Heading */
+
+/*Heading*/
+
 h1{
     color:white;
     font-weight:bold;
 }
 
-/* Main Card */
+h2{
+    color:#333;
+    font-weight:bold;
+}
+
+
+/*Cards*/
+
 .card{
+
     border:none;
     border-radius:15px;
     transition:0.3s;
 }
 
 .card:hover{
+
     transform:translateY(-5px);
+
     box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
 }
 
-/* Buttons */
 
-.btn{
+/*Dashboard Cards*/
+
+.bg-primary{
+
+    background:#4e73df !important;
+
+}
+
+.bg-success{
+
+    background:#1cc88a !important;
+
+}
+
+.bg-warning{
+
+    background:#f6c23e !important;
+
+}
+
+
+/*Form*/
+
+.form-control,
+.form-select{
+
     border-radius:10px;
-    margin-right:5px;
-}
 
-.btn-primary{
-    background:#4e73df;
-}
-
-.btn-success{
-    background:#1cc88a;
-}
-
-.btn-warning{
-    color:white;
-}
-
-.btn-danger{
-    background:#e74a3b;
-}
-
-/* Completed Task */
-
-.text-decoration-line-through{
-    opacity:0.6;
-}
-
-/* Form */
-
-.form-control{
-    border-radius:10px;
 }
 
 textarea{
+
     resize:none;
+
 }
 
-/* Empty Task */
+
+/*Buttons*/
+
+.btn{
+
+    border-radius:10px;
+
+    margin-right:5px;
+
+    transition:0.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.btn-primary{
+
+    background:#4e73df;
+
+    border:none;
+
+}
+
+.btn-success{
+
+    background:#1cc88a;
+
+    border:none;
+
+}
+
+.btn-warning{
+
+    color:white;
+
+}
+
+.btn-danger{
+
+    background:#e74a3b;
+
+    border:none;
+
+}
+
+.btn-secondary{
+
+    border:none;
+
+}
+
+
+/*Completed Task*/
+
+.text-decoration-line-through{
+
+    opacity:0.6;
+
+}
+
+
+/*Alert*/
 
 .alert{
+
     border-radius:10px;
+
+}
+
+
+/*Search Box*/
+
+.input-group input{
+
+    border-radius:10px 0 0 10px;
+
+}
+
+.input-group button{
+
+    border-radius:0 10px 10px 0;
+
+}
+
+
+/*Labels*/
+
+label{
+
+    font-weight:bold;
+
+}
+
+
+/*Task Details*/
+
+p{
+
+    margin-bottom:8px;
+
+}
+
+
+/*Footer*/
+
+footer{
+
+    text-align:center;
+
+    color:white;
+
+    margin-top:30px;
+
+}
+
+
+/*Mobile Responsiv*/
+
+@media(max-width:768px){
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.btn{
+
+    margin-top:8px;
+
+}
+
 }
